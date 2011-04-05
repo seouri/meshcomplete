@@ -1,0 +1,7 @@
+= Meshcomplete
+
+ # add "gem 'meshcomplete'" to Gemfile
+ $ bundle install
+ $ rails g meshcomplete	# creates migration file, Synonym model, JavaScript & CSS files
+ $ rake db:migrate
+ $ rake meshcomplete:load_data

@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Joon Lee"]
   s.email       = ["seouri@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/seouri/meshcomplete"
   s.summary     = %q{Meshcomplete is a Ruby on Rails engine for MeSH autocomplete search box built with jQuery UI.}
   s.description = %q{}
 
@@ -18,4 +18,5 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+  s.add_dependency('jquery-rails', '>= 0.2.7');
 end

@@ -1,7 +1,7 @@
 require 'rails/generators'
 require 'rails/generators/migration'     
 
-class MeshcompleteGenerator < Rails::Generators::NamedBase
+class MeshcompleteGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
 
   source_root File.expand_path('../templates', __FILE__)

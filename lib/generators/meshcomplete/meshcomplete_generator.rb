@@ -1,12 +1,10 @@
 require 'rails/generators'
 require 'rails/generators/migration'     
 
-class MeshcompleteGenerator < Rails::Generators::Base
+class MeshcompleteGenerator < Rails::Generators::NamedBase
   include Rails::Generators::Migration
 
-  def self.source_root
-    @source_root ||= File.join(File.dirname(__FILE__), 'templates')
-  end
+  source_root File.expand_path('../templates', __FILE__)
 
   def self.next_migration_number(dirname)
     if ActiveRecord::Base.timestamped_migrations

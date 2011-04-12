@@ -14,9 +14,12 @@ class MeshcompleteGenerator < Rails::Generators::Base
     end
   end
 
-  def create_migration_file
-    migration_template 'create_synonyms.rb', 'db/migrate/create_synonyms.rb'
+  def create_subjects_migration_file
     migration_template 'create_subjects.rb', 'db/migrate/create_subjects.rb'
+  end
+ 
+  def create_synonyms_migration_file
+    migration_template 'create_synonyms.rb', 'db/migrate/create_synonyms.rb'
   end
  
   def copy_stylesheets

@@ -1,3 +1,3 @@
 class Subject < ActiveRecord::Base
-  has_many :synonym
+  has_many :synonyms
 end

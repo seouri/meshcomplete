@@ -2,6 +2,9 @@
 
  # add "gem 'meshcomplete'" to Gemfile
  $ bundle install
- $ rails g meshcomplete	# creates migration file, Synonym model, JavaScript & CSS files
+ $ rails g meshcomplete	# creates migration file, Subject & Synonym model, JavaScript & CSS files
  $ rake db:migrate
  $ rake meshcomplete:load_data
+
+ # add to config/routes.rb
+ match 'meshcomplete-update' => 'genes#top' # change to appropriate controller & method

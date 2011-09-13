@@ -21,12 +21,4 @@ class MeshcompleteGenerator < Rails::Generators::Base
   def create_synonyms_migration_file
     migration_template 'create_synonyms.rb', 'db/migrate/create_synonyms.rb'
   end
- 
-  def copy_stylesheets
-    copy_file 'meshcomplete.css', 'public/stylesheets/meshcomplete.css'
-  end
- 
-  def copy_javascripts
-    copy_file 'meshcomplete.js', 'public/javascripts/meshcomplete.js'
-  end
 end

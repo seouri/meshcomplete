@@ -64,7 +64,7 @@ $(function() {
       var selected_ids = $("#meshcomplete-selected-ids").attr("value").split(",");
       selected_ids.push( ui.item.id );
       $("#meshcomplete-selected-ids").attr("value", selected_ids.join(","));
-      $("#meshcomplete-update").html('<img src="/images/loading.gif"> Loading ...').slideDown("slow");
+      $("#meshcomplete-update").html('<img src="assets/loading.gif"> Loading ...').slideDown("slow");
       $.get("/meshcomplete-update", { ids: selected_ids.join(",") },
         function(data) {
           $("#meshcomplete-update").html(data).slideDown("slow");

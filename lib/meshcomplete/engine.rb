@@ -3,7 +3,7 @@ require "rails"
 require "meshcomplete/action_view_extension"
 
 module Meshcomplete
-  class Engine < Rails::Engine
+  class Engine < ::Rails::Engine
     config.mount_at = '/'
 
     initializer "check config" do |app|
